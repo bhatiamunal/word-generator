@@ -1,0 +1,7 @@
+<div class="container">
+  <!--<button class="btn btn-primary"></button>-->
+  <h1 style="color: white;">Word limit {{limit}}</h1>
+  <input type="range" min='1' max='50' value="{{limit}}" (change)= " hadleSlideChange($event.target.value)">
+  <button (click)="generate()"> Generate words</button> 
+  <h1 style="color: white;" *ngIf="word">Word  {{word}}</h1>
+</div>
